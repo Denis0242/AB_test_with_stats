@@ -1,3 +1,48 @@
+# Denis Agyapong  
+## Product Data Scientist | Data Analyst  
+
+---
+
+### 🌍 Links:
+📍 Oakland, CA  
+📧 vantjohnn@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/denis-agyapong)  
+🐙 [GitHub](https://github.com/Denis0242)
+
+---
+
+## 🚀 A/B Testing Simulator: Experimentation Framework
+
+A production-ready, end-to-end A/B testing framework that combines **Frequentist** and **Bayesian** statistical approaches with automated Go/No-Go recommendations.
+
+---
+
+## 🎯 Problem Statement
+
+Product Data Scientists spend ~50% of their time designing and analyzing experiments.
+
+This project automates the entire A/B testing workflow:
+
+- **Before**: Manual statistical calculations, Excel spreadsheets, inconsistent methodology  
+- **After**: Automated, rigorous, reproducible analysis with clear recommendations  
+
+---
+
+## 🌙 Real-World Use Case: Dark Mode Launch
+
+**Product team launches "Dark Mode" and needs to know:**
+
+- ✅ Does it increase **Session Duration** (primary metric)?  
+- ✅ Does it hurt **Conversion** (secondary metric)?  
+- ✅ Should we roll it out? (Go/No-Go decision)  
+
+---
+
+## 🏗️ Architecture
+
+
+
+
 #  **Denis Agyapong**  
 **Product Data Scientist | Data Analyst**
 **A/B Testing Simulator: Experimentation Framework**
