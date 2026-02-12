@@ -1,17 +1,19 @@
-# A/B Testing Simulator: Experimentation Framework
+# Denis Agyapong
+**A/B Testing Simulator: Experimentation Framework**
 
-A production-ready, end-to-end A/B testing framework that combines **frequentist** and **Bayesian** statistical approaches with automated Go/No-Go recommendations.
+A production-ready, end-to-end A/B testing framework that combines **frequentist** and **Bayesian** statistical
+approaches with automated Go/No-Go recommendations.
 
-## 🎯 Problem Statement
-
-Product Data Scientists spend ~50% of their time designing and analyzing experiments. This project automates the entire A/B testing workflow:
+### 🎯 Problem Statement
+Product Data Scientists spend ~50% of their time designing and analyzing experiments. This project automates the 
+entire A/B testing workflow:
 
 - **Before**: Manual statistical calculations, Excel spreadsheets, inconsistent methodology
 - **After**: Automated, rigorous, reproducible analysis with clear recommendations
 
 ### Real-World Use Case: Dark Mode Launch
 
-Product team launches "Dark Mode" and needs to know:
+**Product team launches "Dark Mode" and needs to know:**
 - ✅ Does it increase **Session Duration** (primary metric)?
 - ✅ Does it hurt **Conversion** (secondary metric)?
 - ✅ Should we roll it out? (Go/No-Go decision)
@@ -20,15 +22,15 @@ Product team launches "Dark Mode" and needs to know:
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│           Data Collection/Upload                     │
-│        (CSV, Raw Metrics, Streaming)                 │
+│           Data Collection/Upload                    │
+│        (CSV, Raw Metrics, Streaming)                │
 └──────────────────┬──────────────────────────────────┘
                    │
 ┌──────────────────▼──────────────────────────────────┐
-│      Data Loader & Preprocessing                     │
-│   - Outlier removal (IQR, Z-score)                   │
-│   - Train/test split validation                      │
-│   - Descriptive statistics                           │
+│      Data Loader & Preprocessing                    │
+│   - Outlier removal (IQR, Z-score)                  │
+│   - Train/test split validation                     │
+│   - Descriptive statistics                          │
 └──────────────────┬──────────────────────────────────┘
                    │
         ┌──────────┴──────────┐
@@ -37,38 +39,38 @@ Product team launches "Dark Mode" and needs to know:
    │   POWER      │    │  HYPOTHESIS    │
    │  ANALYSIS    │    │   TESTING      │
    └────┬─────────┘    └─────┬──────────┘
-        │                     │
+        │                    │
    ┌────▼─────────┐    ┌─────▼──────────┐
    │ Sample Size  │    │  T-tests       │
    │ Effect Size  │    │  Chi-square    │
    │ Power        │    │  Mann-Whitney  │
    │              │    │  P-values      │
    │              │    │  95% CI        │
-   └────┬─────────┘    └─────┬──────────┘
+   └────┬─────────┘    └──────|─────────┘
         │                     │
         │  ┌──────────────────┤
         │  │                  │
         └──▼──────────────────▼──┐
-           │                      │
-        ┌──▼───────────────┐   ┌──▼────────────┐
-        │    BAYESIAN      │   │ RECOMMENDATION│
-        │   ANALYSIS       │   │  Go/No-Go     │
-        │    (PyMC)        │   │  CAUTION      │
-        └──┬────────────────┘   └─────┬─────────┘
+           │                     │
+        ┌──▼───────────────┐   ┌─▼────────────┐
+        │    BAYESIAN      │   │RECOMMENDATION│
+        │   ANALYSIS       │   │  Go/No-Go    │
+        │    (PyMC)        │   │  CAUTION     │
+        └──┬────────────────┘  └─────┬────────┘
            │ P(B>A)                   │
            │ HDI                      │
            │ Expected Loss            │
            │                          │
         ┌──▴──────────────────────────▴──┐
-        │     FASTAPI REST API             │
-        │   /api/v1/analyze                │
-        │   /api/v1/power-analysis         │
-        │   /api/v1/analyze-csv            │
-        │   /api/v1/sample-data            │
-        └─────────────────────────────────┘
+        │     FASTAPI REST API           │
+        │   /api/v1/analyze              │
+        │   /api/v1/power-analysis       │
+        │   /api/v1/analyze-csv          │
+        │   /api/v1/sample-data          │
+        └────────────────────────────────┘
 ```
 
-## 📊 Key Features
+### 📊 Key Features
 
 ### 1. **Power Analysis & Sample Size Calculation**
 ```python
@@ -505,5 +507,6 @@ Contributions welcome! Areas for improvement:
 ---
 
 **Built with ❤️ for rigorous experimentation**
-#   A B _ t e s t _ w i t h _ s t a t s  
+#   A B _ t e s t _ w i t h _ s t a t s 
+ 
  
