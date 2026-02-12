@@ -1,6 +1,14 @@
-# Denis Agyapong
-
+#  **Denis Agyapong**  
+**Product Data Scientist | Data Analyst**
 **A/B Testing Simulator: Experimentation Framework**
+
+### 🌍 Links:
+📍 Oakland, CA  
+📧 vantjohnn@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/denis-agyapong)  
+🐙 [GitHub](https://github.com/Denis0242)
+
+---
 
 - A production-ready, end-to-end A/B testing framework that combines **frequentist** and **Bayesian** statistical
 approaches with automated Go/No-Go recommendations.
