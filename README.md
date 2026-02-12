@@ -1,7 +1,8 @@
 # Denis Agyapong
+
 **A/B Testing Simulator: Experimentation Framework**
 
-A production-ready, end-to-end A/B testing framework that combines **frequentist** and **Bayesian** statistical
+- A production-ready, end-to-end A/B testing framework that combines **frequentist** and **Bayesian** statistical
 approaches with automated Go/No-Go recommendations.
 
 ### 🎯 Problem Statement
