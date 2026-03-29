@@ -1,142 +1,194 @@
-# 🚀 A/B Testing Framework (Frequentist + Bayesian)
+ 🚀 **Featured Project: A/B Testing & Experimentation Framework**
 
- **Production-Grade Experimentation Engine for Product Data Science
-End-to-end A/B testing system combining experiment design, statistical inference,
-Bayesian modeling, and automated decision logic — deployed via FastAPI.**
 
---- 
-# 📌 Product Context
+## 🌐 Live App:
 
-**Product teams constantly ask:**
-- Did this feature improve engagement, conversion, or retention?
+**Live App:** https://ab-test-with-stats.onrender.com
 
-**Many experiments fail due to:**
-- Underpowered design
-- Misinterpreted p-values
-- No standardized decision criteria
-- Manual spreadsheet analysis
-  
-**This framework standardizes experimentation into a reproducible decision engine.**
+**GitHub:** https://github.com/Denis0242/AB_test_with_stats
+
+An end-to-end product experimentation project using frequentist and Bayesian methods to support feature evaluation, KPI measurement, and data-driven go/no-go decisions.
 
 ---
 
-# 🎯 What This Project Solves
-**This system automates the full experimentation lifecycle:**
-## ✅ Pre-Experiment
-- Power analysis
-- Sample size calculation
-- Minimum Detectable Effect (MDE)
-- Achieved power validation
+## 📌 Overview
 
-## ✅ Post-Experiment
-- Frequentist hypothesis testing
-- Bayesian inference (PyMC)
-- Effect size evaluation
-- Risk-adjusted GO / CAUTION / NO-GO decision
----
-
-**🧪 Real Product Use Case: Dark Mode Launch** 
-- Primary Metric: Session Duration (continuous)
-- Secondary Metric: Conversion Rate (binary)**
-
-**Results:**
-- T-test p-value = 0.001
-- P(Variant > Control) = 98.5%
-- Confidence Score = 87.5%
-
-**Final Decision: GO**
+This project simulates how product and analytics teams evaluate new features before launch. It combines experiment design, hypothesis testing, power analysis, Bayesian inference, and automated decision logic into a reproducible A/B testing workflow.
+It is designed to reflect real-world **Product Data Analyst** and **Data Analyst** responsibilities such as metric tracking, experiment analysis, and decision support.
 
 ---
 
-# 🧠 Core Capabilities
-**🔹 Power Analysis & Experiment Design**
-- Detect 5% lift with 80% statistical power
-- Cohen’s d / Cohen’s h effect sizes
-- Continuous & binary metric support
+## 🎯 Business Problem
 
-# 🔹 Frequentist Testing
-- Independent Samples T-Test
-- Chi-Square Test
-- Mann-Whitney U
-- Confidence Intervals
-- Assumption checks (Shapiro-Wilk, Levene)
+Product teams need to know whether a feature truly improves outcomes such as engagement, conversion, or retention. Without a structured experimentation framework:
 
-# 🔹 Bayesian A/B Testing (PyMC)
-- Posterior distributions
-- P(Variant > Control)
-- Highest Density Interval (HDI)
-- Expected loss
+- Decisions may rely on assumptions instead of data  
+- Tests may be underpowered or incorrectly designed  
+- Results may be misinterpreted  
+- Feature launches may create unnecessary product risk  
 
----
-# 🔹 Decision Engine
-- GO       → Confidence ≥ 75%
-- CAUTION  → 60–74%
-- NO-GO    → < 60%
+This project solves that by standardizing the experimentation process from pre-test planning to final recommendation.
 
 ---
 
-**Decision integrates:**
-- Statistical significance
-- Practical effect size
-- Bayesian probability
-- Risk tolerance
-  
+## 📊 Key Features
+
+- Power analysis and sample size estimation  
+- Minimum Detectable Effect (MDE) planning  
+- Frequentist hypothesis testing  
+- Bayesian A/B testing  
+- Confidence interval and effect size evaluation  
+- Automated go / caution / no-go recommendations  
+- FastAPI deployment for reusable experiment analysis  
+
 ---
-# 🚀 Quick Start
-- git clone https://github.com/Denis0242/AB_test_with_stats.git
-- cd AB_test_with_stats
-- pip install -r requirements.txt
-- python test_all.py
-- python -m uvicorn app:app --reload
 
-**Access:**
+## 🔍 Product Analytics Focus
 
-- API → http://localhost:8000
-- Swagger Docs → http://localhost:8000/docs
-  
- ---
- 
-# 📡 API Endpoints
-| Endpoint                 | Purpose                  |
-| ------------------------ | ------------------------ |
-| `/api/v1/analyze`        | Full experiment analysis |
-| `/api/v1/power-analysis` | Pre-experiment planning  |
-| `/api/v1/analyze-csv`    | Upload CSV experiment    |
-| `/api/v1/sample-data`    | Generate synthetic data  |
+- User behavior analysis  
+- KPI tracking and performance monitoring  
+- Experiment design and measurement  
+- Trend and pattern identification  
+- Data-driven decision support  
+
+---
+
+## 🧠 Analytical Approach
+
+### Pre-Experiment
+- Estimated required sample size  
+- Calculated power and minimum detectable effect  
+- Structured tests for continuous and binary metrics  
+
+### Post-Experiment
+- Compared control vs treatment performance  
+- Evaluated statistical significance and practical effect size  
+- Measured Bayesian probability of improvement  
+- Produced decision recommendations based on experiment evidence  
+
+---
+
+## 📈 Example Product Use Case
+
+A simulated product experiment tests whether a new feature improves performance.
+
+Example metrics include:
+
+- **Primary metric:** Session Duration  
+- **Secondary metric:** Conversion Rate  
+
+This project demonstrates how experiment results can be translated into a product recommendation rather than just a statistical output.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Python**
+- **FastAPI**
+- **NumPy**
+- **SciPy**
+- **Statsmodels**
+- **PyMC**
+- **Uvicorn**
+
+---
+
+## 📊 Product Metrics & Impact
+
+- Defined KPIs to measure performance such as engagement, conversion, and retention  
+- Evaluated feature impact using control vs treatment groups  
+- Measured statistical significance to guide product decisions  
+- Highlighted opportunities to improve product outcomes while reducing rollout risk  
+- Enabled data-driven decision-making through structured experimentation  
+- Reduced the risk of launching low-impact or harmful product changes  
+
+---
+
+## 💼 Business Impact
+
+- Helps product teams make evidence-based launch decisions  
+- Reduces guesswork in feature evaluation  
+- Improves experimentation rigor and consistency  
+- Demonstrates how analytics supports product strategy and risk management  
+
+---
 
 
-# 📁 Project Structure
-```
-AB_test_with_stats/
-├── power_analysis.py
-├── hypothesis_testing.py
-├── bayesian_analysis.py
-├── analysis_pipeline.py
-├── app.py
-├── test_all.py
-├── requirements.txt
-└── README.md
-```
+## 🚀 How to Run Locally
 
-# 🧩 Product Data Science Skills Demonstrated
-- Experiment design & A/B testing
-- Power analysis & MDE planning
-- Statistical inference
-- Bayesian modeling (PyMC)
-- Decision science
-- FastAPI deployment
-- Reproducible analytics pipelines
+Clone the repository  
+`git clone https://github.com/Denis0242/AB_test_with_stats.git`
 
-# 🔮 Future Improvements
-- CUPED variance reduction
-- Sequential testing
-- Multi-armed bandits
-- Uplift modeling
+Navigate into the project  
+`cd AB_test_with_stats`
 
-Built for scalable, rigorous experimentation in product organizations.
+Install dependencies  
+`pip install -r requirements.txt`
 
-# Authur
+Run tests  
+`python test_all.py`
 
-**Denis Agyapong**
+Start the API  
+`python -m uvicorn app:app --reload`
 
-**Product Data Scientist/Data Analyst**
+Open locally:
+
+- API: `http://localhost:8000`
+- Swagger Docs: `http://localhost:8000/docs`
+
+---
+
+## 📁 Project Structure
+
+AB_test_with_stats/  
+│  
+├── app.py — FastAPI application  
+├── analysis_pipeline.py — End-to-end experiment workflow  
+├── power_analysis.py — Sample size and power calculations  
+├── hypothesis_testing.py — Frequentist statistical tests  
+├── bayesian_analysis.py — Bayesian experiment analysis  
+├── data_loader.py — Data loading utilities  
+├── test_all.py — Test script  
+├── requirements.txt — Dependencies  
+└── README.md — Project documentation  
+
+---
+
+## ✅ Skills Demonstrated
+
+- A/B testing and experimentation  
+- Power analysis and MDE planning  
+- Statistical inference  
+- Bayesian analysis  
+- KPI development  
+- Product analytics  
+- Decision science  
+- API-based analytics deployment  
+
+---
+
+## 🔮 Future Improvements
+
+- CUPED variance reduction  
+- Sequential testing  
+- Multi-armed bandits  
+- Uplift modeling  
+
+---
+
+## 📌 Use Case
+
+This project demonstrates:
+
+- Strong experimentation and hypothesis testing skills  
+- Ability to connect statistics to product decisions  
+- Experience with KPI tracking and feature evaluation  
+- Product-focused analytical thinking  
+- End-to-end workflow from experiment design to recommendation  
+
+---
+
+## 📌 Author
+
+**Denis Agyapong**  
+**Product Data Analyst | Data Analyst**
